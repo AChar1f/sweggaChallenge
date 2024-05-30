@@ -1,14 +1,15 @@
-let cell = document.getElementsByTagName('td')
-let output1 = cell[5].innerHTML
-let output2 = cell[11].innerHTML
-let toutput = cell[14].innerHTML
-console.log(toutput)
 
-let femalequantity = document.getElementById('fquantityInput').value
-console.log(femalequantity)
-// let malequantity = document.getElementById('mquantityInput').value
-
-
-// function totalCal() {
-//     document.innerText('output').addEventListener('click', totalCal)
-// }
+function totalCal() {
+    let fPrice = document.querySelector('#fPrice').innerHTML
+    let mPrice = document.querySelector('#mPrice').innerHTML
+    
+    let femaleQuantity = document.querySelector('#fquantityInput').value
+    let maleQuantity = document.querySelector('#mqantityInput').value
+    
+    let fTotal = fPrice * femaleQuantity
+    let  mTotal = mPrice * maleQuantity
+    let total = fTotal + mTotal
+    document.querySelector('#output1').innerHTML = fTotal
+    document.querySelector('#output2').innerHTML = mTotal
+    document.querySelector('#tOutput').innerHTML = total
+}
