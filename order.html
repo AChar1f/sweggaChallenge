@@ -18,7 +18,15 @@
 		<img src="./Images/delivery.gif"  alt="banner">
 	</div>
 	<div id="navigation">
-		<img src="./Images/links.gif"  alt="navbar">
+		<img src="./Images/links.gif"  alt="navbar" usemap="#navbar">
+
+		<map name="navbar">
+			<area shape="rect" coords="10,5,95,35" href="order.html" alt="Home">
+			<area shape="rect" coords="105,5,190,35" href="./pages/services.html" alt="Services">
+			<area shape="rect" coords="205,5,300,35" href="./pages/products.html" alt="Products">
+			<area shape="rect" coords="310,5,440,35" href="./pages/orderStatus.html" alt="Order Status">
+			<area shape="rect" coords="450,5,555,35" href="./pages/contactUs.html" alt="Contact Us">
+		</map>
 	</div>
 	
 
@@ -38,7 +46,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Female Ski Jackets</td>
+						<td><a href="/pages/female.html">Female Ski Jackets</a></td>
 						<td>
 							<select name="sizing">
 								<option>Small</option>
@@ -54,11 +62,11 @@
 							</select>
 						</td>
 						<td>150.95</td>
-						<td><input type="number" id="quantityInput"></td>
-						<td>R301.90</td>
+						<td><input type="number" id="fquantityInput" placeholder="2"></td>
+						<td id="output1">R301.90</td>
 					</tr>
 					<tr>
-						<td>Male Ski Jackets</td>
+						<td><a href="/pages/male.html">Male Ski Jackets</a></td>
 						<td>
 							<select name="sizing">
 								<option>Small</option>
@@ -74,22 +82,23 @@
 							</select>
 						</td>
 						<td>180.90</td>
-						<td><input type="number" id="quantityInput"></td>
-						<td>R723.80</td>
+						<td><input type="number" id="mquantityInput" placeholder="4"></td>
+						<td id="output2">R723.80</td>
 					</tr>
 					<tr>
 						<td colspan="4">Click to confirm and process your order:</td>
-						<td><button type="button"	>Total Price</button></td>
-						<td id="output">R1025.70</td>
+						<td><button type="button" onclick="totalCal()">Total Price</button></td>
+						<td id="tOutput">R</td>
 					</tr>
 				</tbody>
 			</table>
 		</form>
 	</div>
 	
+	<footer id="footer" >
+		<p class="copyright">&copy; 2014 Swegga Fashion - Abdurahmaan Charif</p>
+	</footer>
 </div>
-<footer id="footer" >
-	<p class="copyright">&copy; 2014 Swegga Fashion - Abdurahmaan Charif</p>
-</footer>
+<script src="./script/code.js"></script>
 </body>
 </html>

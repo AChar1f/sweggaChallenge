@@ -1,3 +1,5 @@
+/* Abdurahmaan Charif */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 	font-size: 85%;
@@ -53,6 +55,7 @@ img[alt='navbar'] {
 	margin-top: 0.5em;
 	padding-top: 0.7em;
 	border-top: 2px solid gray ;
+	clear: left;
 }
 .copyright {
     font-size: 90%;
@@ -81,9 +84,12 @@ td, th {
 .alignRight {
 	text-align: right; }
 
-#quantityInput {
+#fquantityInput {
 	width: 65px;
 	padding-left: 5px;
 }
-
+#mquantityInput {
+	width: 65px;
+	padding-left: 5px;
+}
 	/* Abdurahmaan Charif */
